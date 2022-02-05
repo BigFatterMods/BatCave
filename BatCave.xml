@@ -1,0 +1,954 @@
+			Welcome to the BatCave Base brought to you by Monster, owner of Biggest Fattest Mods xbox dayz server, this does run slightly laggy in the old gen xbox one ( it is 333 .json items lol) 
+			If you can make a base radar the chordes I used for this is x 800, z 10750
+			The base itself is by the arena/ski resort/sinystok. its closest to the arena in a open  feild south of the tunnel
+			Zs, Wolfs, and Bears do not path on top of the floor, if your standing on the apartments that make a floor, they will fall under you leaving you safe on the top, however they do undrstand the ramp so your not safe there 
+			I have noticed the loudspeaker sometimes isnt there and sometimes is, should be at the front door with a well and gas pump that work perfect 
+			You can just upload the json, but none of the base building goodies, none of the buildings are set to spawn loot, if you want that get me on discord monsterslayer57#7661 (525230645094645780) or if something is wrong, notice a crack in the wall etc.
+			The npc is kinda hidden under the ramp down, go down go left, go behind the bunker find the hole and they are in a hidden walkway
+
+			Here is the cfggamplay.json snip you need to add/change to get the json to work also upload the BatCave2.json onto the custom tab of your server 
+			},
+	"WorldsData":
+	{
+		"lightingConfig": 1,
+		"objectSpawnersArr":  
+		[
+			"./custom/BatCave2.json"
+		]
+	},
+			Here is the cfgeventspawns.xml additions, make sure to not have any of the same named things in your server if copy and pasteing this 
+	  	  	<event name="Vehicle_Custom1">
+       <pos x="1075.34" z="10832.7" a="347.50"/> <!-- BatMobile --> 
+	  </event>
+	  	  	<event name="Vehicle_Custom2">
+       <pos x="1079.11" z="10834" a="346.22"/> <!-- BatTruck --> 
+	  </event>
+			<event name="ItemLog"> <!-- BatCave -->
+	     <pos x="1001.63" z="10793.2" a="353.948" /> 
+	</event>
+			<event name="ItemPlanks"> <!-- BatCave --> 
+	    <pos x="1003.81" z="10786.9" a="353.422" />
+	</event>
+			<event name="ItemMetalPlate"><!-- BatCave --> 
+	    <pos x="999.635" z="10800.6" a="354.41" />
+	</event>
+	    <event name="ItemNPCMaria"> <!-- BatCave --> 
+        <pos x="1028.59" y="350.43" z="10811.9" a="-108" />
+	</event>
+	 <event name="Itemdrop1"> <!-- BatCave -->
+		<pos x="1005.43" z="10789.2" a="353.844" />
+    </event>
+		Here is the cfgspawnabletypes.xml additions (feel free to use whatever npc loadout you want this is just the one that was asked for)
+</type>
+	<type name="ChildBag_Green">
+		<cargo chance="1">
+			<item name="Hatchet" />
+		</cargo>
+		<cargo chance="1">
+			<item name="FieldShovel" />
+		</cargo>
+		<cargo chance="1">
+			<item name="Whetstone" />
+		</cargo>
+		<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+		<cargo chance="1">
+			<item name="NailBox"/>
+		</cargo>
+		<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+			<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+		<cargo chance="1">
+			<item name="NailBox"/>
+		</cargo>
+		<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+			<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+		<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+			<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+			<cargo chance="1">
+			<item name="NailBox" />
+		</cargo>
+</type>
+	<type name="OffroadHatchback_White">
+		<attachments chance="1.00">
+			<item name="HatchbackWheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackWheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackWheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackWheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackWheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="CarRadiator" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="CarBattery" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="SparkPlug" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackDoors_Driver_White" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackDoors_CoDriver_White" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackHood_White" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HatchbackTrunk_White" chance="1.00" />
+		</attachments>
+	    <attachments chance="1.00">
+			<item name="CanisterGasoline" chance="1.00" />
+		</attachments>
+	    <attachments chance="1.00">
+			<item name="SparkPlug" chance="1.00" />
+		</attachments>
+	    <attachments chance="1.00">
+			<item name="CarRadiator" chance="1.00" />
+		</attachments>
+        <attachments chance="1.00">
+            <item name="Canteen" chance="1.00" />
+        </attachments>        
+        <attachments chance="1.00">
+            <item name="Canteen" chance="1.00" />
+        </attachments>
+		<attachments chance="1.00">
+            <item name="Canteen" chance="1.00" />
+        </attachments>        
+        <attachments chance="1.00">
+            <item name="Canteen" chance="1.00" />
+        </attachments>
+</type>
+	<type name="Truck_01_Covered_Orange">
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Wheel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_WheelDouble" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="TruckBattery" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HeadlightH7" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Hood_Orange" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Door_1_1_Orange" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Truck_01_Door_2_1_Orange" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WoodenCrate" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Blue" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Red" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Green" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Barrel_Yellow" chance="1.00" />
+		</attachments>
+	    <attachments chance="1.00">
+			<item name="CanisterGasoline" chance="1.00" />
+		</attachments>
+	    <attachments chance="1.00">
+			<item name="CanisterGasoline" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="FenceKit" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="FenceKit" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WatchtowerKit" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="WatchtowerKit" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="NailBox" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MetalWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="BarbedWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="BarbedWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="BarbedWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="BarbedWire" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Hacksaw" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="HandSaw" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Pickaxe" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Pickaxe" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Pliers" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Pliers" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Shovel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="CableReel" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Pliers" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="GardenLime" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Spotlight" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Spotlight" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="CarTent" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="LargeTent" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="MediumTent " chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Camonet" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Camonet" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="CombinationLock4" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="CombinationLock4" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Hatchet" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Hatchet" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Hatchet" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Whetstone" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Whetstone" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Whetstone" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Whetstone" chance="1.00" />
+		</attachments>
+		<attachments chance="1.00">
+			<item name="Whetstone" chance="1.00" />
+		</attachments>
+</type>
+		<type name="SurvivorF_Maria"><!-- BatCave -->
+	<attachments chance="1.00">
+		<item name="BallisticHelmet_Green" />
+	</attachments>
+	<attachments chance="1.00">
+			<item name="NVGHeadstrap" />
+	</attachments>
+	<attachments>
+		<item name="NVGoggles" />
+	</attachments>	
+	<attachments chance="1.00">
+		<item name="USMCJacket_Woodland" />
+	</attachments>	
+	<attachments chance="1.00">
+		<item name="USMCPants_Woodland" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="MilitaryBoots_Black" />
+	</attachments>	
+	<attachments chance="1.00">
+		<item name="PlateCarrierVest" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="AliceBag_Camo" />
+	</attachments>
+		<attachments chance="1.00">
+		<item name="Armband_Yellow" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="TacticalGloves_Green" />
+	</attachments>	
+	<attachments chance="1.00">
+		<item name="MilitaryBelt" />
+	</attachments>	
+	<attachments chance="1.00">
+		<item name="FAL" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="Fal_FoldingBttstck" chance="1.00" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="ACOGOptic" chance="1.00" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="Mag_FAL_20Rnd" chance="1.00" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="Mag_FAL_20Rnd" chance="1.00" />
+	</attachments>
+	<attachments chance="1.00">
+		<item name="AugShort" />		
+	</attachments>
+	<attachments>
+		<item name="Mag_Aug_30Rnd"/>
+	</attachments>
+	<attachments>
+		<item name="Mag_Aug_30Rnd"/>
+	</attachments>
+	<attachments>
+		<item name="Mag_Aug_30Rnd"/>
+	</attachments>
+	<attachments>
+		<item name="Mag_Aug_30Rnd"/>
+	</attachments>
+	<attachments>
+		<item name="CombatKnife" />
+	</attachments>	
+	<attachments>
+		<item name="PlateCarrierHolster" />
+	</attachments>
+	<attachments>
+		<item name="PlateCarrierHolster" />
+	</attachments>
+	<attachments>
+		<item name="NylonKnifeSheath" />
+	</attachments>
+	<attachments>
+		<item name="PainkillerTablets" />
+	</attachments>	
+	<attachments>
+		<item name="TetracyclineAntibiotics" />
+	</attachments>
+	<attachments>
+		<item name="VitaminBottle" />
+	</attachments>
+	<attachments>
+		<item name="CharcoalTablets" />
+	</attachments>	
+	<attachments>
+		<item name="BandageDressing" />
+	</attachments>
+	<attachments>
+		<item name="BandageDressing" />
+	</attachments>
+	<attachments>
+		<item name="BandageDressing" />
+	</attachments>	
+	<attachments chance="1.00">
+		<item name="Shovel" />
+	</attachments>
+		<attachments>
+		<item name="Hatchet" />
+	</attachments>
+		<attachments>
+		<item name="LandMineTrap" />
+	</attachments>
+			<attachments>
+		<item name="LandMineTrap" />
+	</attachments>
+			<attachments>
+		<item name="LandMineTrap" />
+	</attachments>
+			<attachments>
+		<item name="LandMineTrap" />
+	</attachments>
+		<attachments>
+		<item name="LandMineTrap" />
+	</attachments>
+		<attachments>
+		<item name="M67Grenade" />
+	</attachments>
+			<attachments>
+		<item name="M67Grenade" />
+	</attachments>
+			<attachments>
+		<item name="M67Grenade" />
+	</attachments>
+			<attachments>
+		<item name="M67Grenade" />
+			</attachments>
+				<attachments>
+		<item name="M67Grenade" />
+		</attachments>
+			<attachments>
+		<item name="PetrolLighter" />
+			</attachments>
+			<attachments>
+		<item name="Honey" />
+			</attachments>
+			<attachments>
+		<item name="Honey" />
+			</attachments>
+			<attachments>
+		<item name="Canteen" />
+			</attachments>
+			<attachments>
+		<item name="Battery9V" />
+			</attachments>
+			<attachments>
+</type>
+
+	Here are the events.xml additions 
+	   </event>
+		    <event name="Vehicle_Custom1">
+        <nominal>1</nominal>
+        <min>1</min>
+        <max>1</max>
+        <lifetime>3888000</lifetime>
+        <restock>1</restock>
+        <saferadius>0</saferadius>
+        <distanceradius>0</distanceradius>
+        <cleanupradius>200</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="1" min="1" type="OffroadHatchback_White"/>
+        </children>
+    </event>
+		    <event name="Vehicle_Custom2">
+        <nominal>1</nominal>
+        <min>1</min>
+        <max>1</max>
+        <lifetime>3888000</lifetime>
+        <restock>1</restock>
+        <saferadius>0</saferadius>
+        <distanceradius>0</distanceradius>
+        <cleanupradius>200</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="1" min="1" type="Truck_01_Covered_Orange"/>
+        </children>
+    </event>
+			<event name="ItemPlanks">
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>50</max>
+        <lifetime>720000</lifetime>
+        <restock>1</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>1</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="0"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="100" min="100" type="WoodenPlank"/>
+        </children>
+    </event>
+    <event name="ItemLog">
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>50</max>
+        <lifetime>720000</lifetime>
+        <restock>1</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>1</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="0"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="100" min="50" type="WoodenLog"/><!-- also can try WoodenPlank or WoodenLog -->
+        </children>
+    </event>
+		<event name="ItemMetalPlate">
+        <nominal>50</nominal>
+        <min>50</min>
+        <max>50</max>
+        <lifetime>720000</lifetime>
+        <restock>1</restock>
+        <saferadius>1</saferadius>
+        <distanceradius>1</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="0"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="100" min="100" type="MetalPlate"/>
+        </children>
+    </event>
+	    <event name="ItemNPCMaria">
+        <nominal>3</nominal>
+        <min>3</min>
+        <max>3</max>
+        <lifetime>300</lifetime>
+        <restock>0</restock>
+        <saferadius>0</saferadius>
+        <distanceradius>0</distanceradius>
+        <cleanupradius>0</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="0"/>
+        <position>fixed</position>
+        <limit>child</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="3" min="3" type="SurvivorF_Maria"/>
+        </children>
+	</event>
+			<event name="Itemdrop1">
+        <nominal>15</nominal>
+        <min>15</min>
+        <max>15</max>
+        <lifetime>720000</lifetime>
+        <restock>1</restock>
+        <saferadius>0</saferadius>
+        <distanceradius>0</distanceradius>
+        <cleanupradius>0</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="0"/>
+        <position>fixed</position>
+        <limit>mixed</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="0" lootmin="0" max="15" min="15" type="ChildBag_Green"/>
+        </children>
+    </event
+
+
+>there are a few chordes to delete from the wolf_territories, here is full list normal - the wolfs in the area (they spawn in the floor where you cant get to, but this is not required) 
+		<?xml version="1.0" encoding="UTF-8"?>
+<territory-type>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3142.5" z="4087.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3390" z="3892.5" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2617.5" z="3840" r="202.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1312.5" z="3060" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2595" z="3825" r="240"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2565" z="4417.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2137.5" z="3367.5" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3697.5" z="4140" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3630" z="3495" r="180"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="9697.5" z="7972.5" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10252.5" z="11287.5" r="225"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10275" z="11782.5" r="210"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="9375" z="10695" r="187.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="9922.5" z="11062.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10215" z="12007.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10252.5" z="11257.5" r="270"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9367.5" z="10635" r="240"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9330" z="9682.5" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9832.5" z="9330" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9165" z="10207.5" r="195"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10897.5" z="10342.5" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9817.5" z="11017.5" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10290" z="10612.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9495" z="10065" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10680" z="11205" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="8977.5" z="8197.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="8880" z="8272.5" r="52.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="7237.5" z="7612.5" r="45"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="8092.5" z="10252.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9330" z="9682.5" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8100" z="10275" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9165" z="10207.5" r="195"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8017.5" z="11002.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7612.5" z="11137.5" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="8527.5" z="13845" r="90"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="9930" z="13845" r="75"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="9270" z="13710" r="67.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10275" z="11782.5" r="210"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10192.5" z="12682.5" r="172.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10065" z="12105" r="165"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10185" z="13057.5" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10215" z="12007.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9480" z="12457.5" r="270"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10215" z="12817.5" r="240"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9007.5" z="12262.5" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8332.5" z="11730" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="9930" z="13845" r="75"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="9270" z="13710" r="67.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="10050" z="13867.5" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10072.5" z="14625" r="195"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="8572.5" z="14587.5" r="187.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10582.5" z="14910" r="180"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="8842.5" z="15157.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10087.5" z="14580" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10747.5" z="14857.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8707.5" z="14947.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9810" z="15052.5" r="247.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8325" z="14587.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9255" z="15037.5" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9330" z="14235" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10215" z="15045" r="165"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="1867.5" z="9862.5" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1455" z="8745" r="195"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2145" z="6990" r="187.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1747.5" z="8377.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1695" z="8272.5" r="247.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1560" z="7417.5" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2190" z="7005" r="202.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2122.5" z="8392.5" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2677.5" z="7560" r="172.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="10597.5" z="13432.5" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10837.5" z="13942.5" r="247.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="11070" z="13455" r="210"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="11670" z="13695" r="157.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="11295" z="13860" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="11137.5" z="13597.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10747.5" z="14857.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="12097.5" z="14737.5" r="285"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="11737.5" z="13635" r="240"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="11205" z="15135" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="13695" z="14700" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10927.5" z="14085" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="13065" z="15187.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="11152.5" z="13080" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="12577.5" z="14437.5" r="165"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="10402.5" z="7582.5" r="75"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10252.5" z="11287.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9832.5" z="9330" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10897.5" z="10342.5" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10290" z="10612.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9495" z="10065" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10680" z="11205" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="2835" z="13897.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="2370" z="14235" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3757.5" z="15232.5" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2302.5" z="14355" r="202.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2895" z="14632.5" r="202.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2235" z="14310" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3127.5" z="14745" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2775" z="14055" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1777.5" z="14520" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2677.5" z="14715" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="910" z="5265" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1695" z="6187.5" r="247.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1932.5" z="5740" r="187.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="952.5" z="6225" r="172.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="745" z="3752.5" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1197.5" z="3120" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="997.5" z="6217.5" r="255"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1085" z="5002.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="540" z="4252.5" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1900" z="6012.5" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="407.5" z="3470" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1587.5" z="5657.5" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="8542.5" z="14025" r="75"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="7710" z="14430" r="67.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="7980" z="14700" r="67.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="8572.5" z="14587.5" r="187.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="8002.5" z="14385" r="180"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="8842.5" z="15157.5" r="172.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="7537.5" z="14640" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8707.5" z="14947.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9810" z="15052.5" r="247.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8325" z="14587.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9255" z="15037.5" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7830" z="15007.5" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9330" z="14235" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7567.5" z="14685" r="180"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="4822.5" z="13657.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="6315" z="13875" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="6030" z="13485" r="45"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="6997.5" z="12127.5" r="232.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="7477.5" z="11970" r="180"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="7012.5" z="13807.5" r="172.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="6457.5" z="13950" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="6960" z="12105" r="292.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="5947.5" z="13965" r="277.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7462.5" z="11970" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="6457.5" z="12210" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7110" z="13680" r="202.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8017.5" z="11002.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7155" z="12900" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="5415" z="13387.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7612.5" z="11137.5" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8332.5" z="11730" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="6712.5" z="13470" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="8880" z="8272.5" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="8092.5" z="10252.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9330" z="9682.5" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8100" z="10275" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9165" z="10207.5" r="195"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="8017.5" z="11002.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7612.5" z="11137.5" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="2595" z="5947.5" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1777.5" z="5760" r="187.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2160" z="5722.5" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1792.5" z="5910" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2565" z="4417.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="907.5" z="5100" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="540" z="4252.5" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2242.5" z="5662.5" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="2370" z="14235" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="240" z="13702.5" r="240"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="502.5" z="14055" r="195"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1297.5" z="14437.5" r="180"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="825" z="13867.5" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1057.5" z="13852.5" r="292.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="465" z="13972.5" r="285"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="345" z="15007.5" r="255"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1822.5" z="13950" r="247.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1297.5" z="14422.5" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="877.5" z="14340" r="195"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1777.5" z="14520" r="165"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="4515" z="3907.5" r="67.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3765" z="3175" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3390" z="3892.5" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2587.5" z="3960" r="202.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="4057.5" z="4275" r="180"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="3767.5" z="4405" r="172.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="4080" z="3947.5" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2630" z="3927.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2580" z="4405" r="240"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2785" z="4682.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3387.5" z="5257.5" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="4047.5" z="3422.5" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3697.5" z="4140" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3630" z="3495" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3647.5" z="5087.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3555" z="4462.5" r="165"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="10597.5" z="13432.5" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="10710" z="13162.5" r="247.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="11070" z="13455" r="210"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="11670" z="13695" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10695" z="13072.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="11137.5" z="13597.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="11737.5" z="13635" r="240"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="11152.5" z="13080" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="10680" z="11205" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="1867.5" z="9862.5" r="52.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="1867.5" z="10117.5" r="52.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="1875" z="10215" r="45"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1327.5" z="8317.5" r="247.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1455" z="8745" r="195"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1335" z="9105" r="180"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1747.5" z="8377.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1350" z="8947.5" r="270"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1695" z="8272.5" r="247.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1335" z="9450" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2122.5" z="8392.5" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2677.5" z="7560" r="172.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="2835" z="13897.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="2370" z="14235" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3757.5" z="15232.5" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2302.5" z="14355" r="202.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2895" z="14632.5" r="202.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1297.5" z="14437.5" r="180"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2145" z="13867.5" r="157.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2235" z="14310" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="3127.5" z="14745" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="345" z="15007.5" r="255"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1822.5" z="13950" r="247.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1297.5" z="14422.5" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="877.5" z="14340" r="195"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2775" z="14055" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1777.5" z="14520" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2677.5" z="14715" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="4822.5" z="13657.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="4897.5" z="13815" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="6030" z="13485" r="45"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="6997.5" z="12127.5" r="232.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="7477.5" z="11970" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="6960" z="12105" r="292.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7462.5" z="11970" r="217.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="6457.5" z="12210" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="5415" z="13387.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="7612.5" z="11137.5" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="8977.5" z="8197.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="8880" z="8272.5" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="9375" z="10695" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9367.5" z="10635" r="240"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9330" z="9682.5" r="232.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9832.5" z="9330" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9165" z="10207.5" r="195"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="9495" z="10065" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="1282.5" z="11730" r="67.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="1117.5" z="12007.5" r="67.5"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="817.5" z="12105" r="60"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="727.5" z="9630" r="247.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1372.5" z="10897.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="532.5" z="11745" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="742.5" z="9630" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1357.5" z="10882.5" r="225"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1012.5" z="11782.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="480" z="11152.5" r="172.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="165" z="12165" r="165"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="975" z="11002.5" r="157.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="1762.5" z="10530" r="75"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="727.5" z="9630" r="247.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="742.5" z="9630" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="480" z="11152.5" r="172.5"/>
+    </territory>
+    <territory color="4291611852">
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3157.5" z="5850" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="2595" z="5947.5" r="60"/>
+        <zone name="Water" smin="0" smax="0" dmin="0" dmax="0" x="3255" z="6105" r="52.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1710" z="6937.5" r="247.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="2145" z="6990" r="187.5"/>
+        <zone name="Rest" smin="0" smax="0" dmin="0" dmax="0" x="1567.5" z="7342.5" r="180"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1695" z="6907.5" r="300"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="1560" z="7417.5" r="210"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2190" z="7005" r="202.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2122.5" z="8392.5" r="187.5"/>
+        <zone name="HuntingGround" smin="0" smax="0" dmin="0" dmax="0" x="2677.5" z="7560" r="172.5"/>
+    </territory>
+</territory-type>
